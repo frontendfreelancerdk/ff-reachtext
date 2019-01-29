@@ -23,7 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -79,7 +79,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [],
             "assets": [
@@ -123,6 +123,41 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ff-reachtext": {
+      "root": "projects/ff-reachtext",
+      "sourceRoot": "projects/ff-reachtext/src",
+      "projectType": "library",
+      "prefix": "ff",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ff-reachtext/tsconfig.lib.json",
+            "project": "projects/ff-reachtext/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ff-reachtext/src/test.ts",
+            "tsConfig": "projects/ff-reachtext/tsconfig.spec.json",
+            "karmaConfig": "projects/ff-reachtext/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ff-reachtext/tsconfig.lib.json",
+              "projects/ff-reachtext/tsconfig.spec.json"
+            ],
             "exclude": [
               "**/node_modules/**"
             ]

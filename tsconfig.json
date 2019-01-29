@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ff-reachtext": [
+        "dist/ff-reachtext"
+      ],
+      "ff-reachtext/*": [
+        "dist/ff-reachtext/*"
+      ]
+    }
   }
 }
