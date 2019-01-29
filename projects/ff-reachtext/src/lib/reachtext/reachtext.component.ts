@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {NavigationEnd, Router} from '@angular/router';
 
 @Component({
@@ -6,16 +6,14 @@ import {NavigationEnd, Router} from '@angular/router';
   templateUrl: './reachtext.component.html',
   styleUrls: ['./reachtext.component.scss']
 })
-export class ReachtextComponent implements OnInit {
+export class ReachtextComponent {
   @Input() data = '';
-  private fragment: string;
 
   constructor(private router: Router) {
     router.events.subscribe(s => {
       if (s instanceof NavigationEnd) {
         const tree = router.parseUrl(router.url);
         if (tree.fragment) {
-          console.log(tree.fragment);
           const element = document.querySelector('#' + tree.fragment);
           if (element) {
             element.scrollIntoView(true);
@@ -44,8 +42,5 @@ export class ReachtextComponent implements OnInit {
         this.router.navigate([link]);
       }
     }
-  }
-
-  ngOnInit(): void {
   }
 }
