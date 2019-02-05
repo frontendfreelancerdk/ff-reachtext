@@ -1,13 +1,13 @@
 {
   "name": "ff-reachtext-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "test_lib": "ng test ff-reachtext --watch=false --browsers=ChromeHeadless",
-	"build_lib": "ng build ff-reachtext",
+	  "build_lib": "ng build ff-reachtext",
     "prebuild_lib": "node copy_readme",
     "lint": "ng lint",
     "e2e": "ng e2e"
