@@ -2,11 +2,11 @@ import {Component, Input} from '@angular/core';
 import {NavigationEnd, Router} from '@angular/router';
 
 @Component({
-  selector: 'ff-reachtext',
-  templateUrl: './reachtext.component.html',
-  styleUrls: ['./reachtext.component.scss']
+  selector: 'ff-richtext',
+  templateUrl: './richtext.component.html',
+  styleUrls: ['./richtext.component.scss']
 })
-export class ReachtextComponent {
+export class FFRichtextComponent {
   @Input() data = '';
 
   constructor(private router: Router) {

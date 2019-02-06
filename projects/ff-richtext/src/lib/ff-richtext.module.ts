@@ -1,14 +1,14 @@
 import {NgModule} from '@angular/core';
-import {ReachtextComponent} from './reachtext/reachtext.component';
+import {FFRichtextComponent} from './richtext/richtext.component';
 import {SafeHtmlPipe} from './safe-html.pipe';
 import {CommonModule} from '@angular/common';
 
 @NgModule({
-  declarations: [ReachtextComponent, SafeHtmlPipe],
+  declarations: [FFRichtextComponent, SafeHtmlPipe],
   imports: [
     CommonModule
   ],
-  exports: [ReachtextComponent]
+  exports: [FFRichtextComponent]
 })
-export class FfReachtextModule {
+export class FFRichtextModule {
 }

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ff-reachtext-app": {
+    "ff-richtext-app": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ff-reachtext-app",
+            "outputPath": "dist/ff-richtext-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -57,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ff-reachtext-app:build"
+            "browserTarget": "ff-richtext-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ff-reachtext-app:build:production"
+              "browserTarget": "ff-richtext-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ff-reachtext-app:build"
+            "browserTarget": "ff-richtext-app:build"
           }
         },
         "test": {
@@ -103,7 +103,7 @@
         }
       }
     },
-    "ff-reachtext-app-e2e": {
+    "ff-richtext-app-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +112,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ff-reachtext-app:serve"
+            "devServerTarget": "ff-richtext-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ff-reachtext-app:serve:production"
+              "devServerTarget": "ff-richtext-app:serve:production"
             }
           }
         },
@@ -131,33 +131,33 @@
         }
       }
     },
-    "ff-reachtext": {
-      "root": "projects/ff-reachtext",
-      "sourceRoot": "projects/ff-reachtext/src",
+    "ff-richtext": {
+      "root": "projects/ff-richtext",
+      "sourceRoot": "projects/ff-richtext/src",
       "projectType": "library",
       "prefix": "ff",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ff-reachtext/tsconfig.lib.json",
-            "project": "projects/ff-reachtext/ng-package.json"
+            "tsConfig": "projects/ff-richtext/tsconfig.lib.json",
+            "project": "projects/ff-richtext/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ff-reachtext/src/test.ts",
-            "tsConfig": "projects/ff-reachtext/tsconfig.spec.json",
-            "karmaConfig": "projects/ff-reachtext/karma.conf.js"
+            "main": "projects/ff-richtext/src/test.ts",
+            "tsConfig": "projects/ff-richtext/tsconfig.spec.json",
+            "karmaConfig": "projects/ff-richtext/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ff-reachtext/tsconfig.lib.json",
-              "projects/ff-reachtext/tsconfig.spec.json"
+              "projects/ff-richtext/tsconfig.lib.json",
+              "projects/ff-richtext/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -167,5 +167,5 @@
       }
     }
   },
-  "defaultProject": "ff-reachtext-app"
+  "defaultProject": "ff-richtext-app"
 }

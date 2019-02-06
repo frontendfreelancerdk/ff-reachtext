@@ -18,11 +18,11 @@
       "dom"
     ],
     "paths": {
-      "ff-reachtext": [
-        "dist/ff-reachtext"
+      "ff-richtext": [
+        "dist/ff-richtext"
       ],
-      "ff-reachtext/*": [
-        "dist/ff-reachtext/*"
+      "ff-richtext/*": [
+        "dist/ff-richtext/*"
       ]
     }
   }

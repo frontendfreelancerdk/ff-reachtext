@@ -7,7 +7,7 @@ import {HomeComponent} from './pages/home/home.component';
 import {SecondComponent} from './pages/second/second.component';
 import {ThirdComponent} from './pages/third/third.component';
 import {PageNotFoundComponent} from './pages/page-not-found/page-not-found.component';
-import {FfReachtextModule} from 'ff-reachtext';
+import {FFRichtextModule} from 'ff-richtext';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import {FfReachtextModule} from 'ff-reachtext';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FfReachtextModule
+    FFRichtextModule
   ],
   providers: [],
   bootstrap: [AppComponent]

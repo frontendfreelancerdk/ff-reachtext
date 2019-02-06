@@ -1,12 +1,12 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
-import {ReachtextComponent} from './reachtext.component';
+import {FFRichtextComponent} from './richtext.component';
 import {SafeHtmlPipe} from '../safe-html.pipe';
 import {Router} from '@angular/router';
 import {BehaviorSubject} from 'rxjs';
 
-describe('ReachtextComponent', () => {
-  let component: ReachtextComponent;
-  let fixture: ComponentFixture<ReachtextComponent>;
+describe('FFRichtextComponent', () => {
+  let component: FFRichtextComponent;
+  let fixture: ComponentFixture<FFRichtextComponent>;
   const routerStub = {
     navigate: jasmine.createSpy('navigate'),
     events: new BehaviorSubject({})
@@ -14,7 +14,7 @@ describe('ReachtextComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ReachtextComponent, SafeHtmlPipe],
+      declarations: [FFRichtextComponent, SafeHtmlPipe],
       providers: [{
         provide: Router,
         useValue: routerStub
@@ -24,7 +24,7 @@ describe('ReachtextComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ReachtextComponent);
+    fixture = TestBed.createComponent(FFRichtextComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
     console.log(document.location.href);

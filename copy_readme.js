@@ -2,7 +2,7 @@ const glob = require('glob');
 const fs = require('fs');
 
 glob('./README.md', {}, function (er, file) {
-  const destination = './projects/ff-reachtext',
+  const destination = './projects/ff-richtext',
     src = './';
 
   let destinationFile = destination + file[0].replace(src, ''),

@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ff-reachtext-app';
+  title = 'ff-richtext-app';
   data = `<h1>Politik for Privatliv og Cookies.</h1>
 <p>Websiden ejes og publiceres af:</p>
 <p><strong>Frontend Freelancer</strong></p>
