@@ -149,7 +149,8 @@
           "options": {
             "main": "projects/ff-richtext/src/test.ts",
             "tsConfig": "projects/ff-richtext/tsconfig.spec.json",
-            "karmaConfig": "projects/ff-richtext/karma.conf.js"
+            "karmaConfig": "projects/ff-richtext/karma.conf.js",
+            "codeCoverage": true
           }
         },
         "lint": {
